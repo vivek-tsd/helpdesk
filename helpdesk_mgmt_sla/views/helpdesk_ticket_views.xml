@@ -31,10 +31,7 @@
         <field name="arch" type="xml">
             <xpath expr="//field[@name='channel_id']" position="after">
                 <field name="team_sla" invisible="1" />
-                <field
-                    name="sla_deadline"
-                    invisible="team_sla == False"
-                />
+                <field name="sla_deadline" invisible="team_sla == False" />
             </xpath>
         </field>
     </record>
